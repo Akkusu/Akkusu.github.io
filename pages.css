@@ -2,7 +2,7 @@
 .page-1 {
   background-color: #d1b99d;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(56, 0, 0, 0.5);
+  box-shadow: 0 10px 20px #382804;
   border: #382804 11px solid;
 }
 
@@ -66,6 +66,7 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  z-index: 2
 }
 
 .page.active {
@@ -115,7 +116,7 @@
 .dot {
   position: absolute;
   font-size: 1.5em;
-  color: #ffffff;
+  color: #fff2e6;
   opacity: 0.8;
 }
 

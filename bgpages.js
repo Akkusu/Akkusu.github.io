@@ -26,8 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 
-  const createShootingStar = (page) => {
-    if (currentPageIndex === 1) { // Page-2
+  const createShootingStar = (page, top, left) => {
       const star = document.createElement("div");
       star.classList.add("star-shooting");
       star.style.top = `${Math.random() * window.innerHeight}px`;
@@ -37,7 +36,6 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => {
         body.removeChild(star);
       }, 5000);
-    }
   };
 
   const createInsect = (page, top, left) => {
@@ -65,12 +63,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 5000);
   };
 
-  const createSteam = (page, top, left) => {
-    const steam = document.createElement("div");
-    steam.classList.add("steam");
-    steam.style.top = `${top}px`;
-    steam.style.left = `${left}px`;
-    page.appendChild(steam);
+  const createBouncingBall = (page) => {
+      const ball = document.createElement("div");
+      ball.classList.add("bouncing-ball");
+      ball.style.top = `${Math.random() * window.innerHeight}px`;
+      ball.style.left = `${Math.random() * window.innerWidth}px`;
+      page.appendChild(ball);
+
+      setTimeout(() => {
+        page.removeChild(ball);
+      }, 5000);
   };
 
   const createConfetti = (page, top, left, color) => {
@@ -103,7 +105,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     if (currentPageIndex === 1) { // Page-2: Estrellas fugaces
-      createShootingStar(body);
+      const randomTop = Math.random() * window.innerHeight;
+      const randomLeft = Math.random() * window.innerWidth;
+      createShootingStar(body, randomTop, randomLeft);
     }
 
     if (currentPageIndex === 2) { // Page-3: Luciérnagas
@@ -120,8 +124,8 @@ document.addEventListener("DOMContentLoaded", () => {
       createLampLight(body, randomTop, randomLeft, randomColor);
     }
 
-    if (currentPageIndex === 4) { // Page-5: Vapor
-      createSteam(body, 20, 100);
+    if (currentPageIndex === 4) { // Page-5: Bolas rebotando
+      createBouncingBall(body);
     }
 
     if (currentPageIndex === 5) { // Page-6: Confeti
@@ -131,5 +135,5 @@ document.addEventListener("DOMContentLoaded", () => {
       const randomColor = colors[Math.floor(Math.random() * colors.length)];
       createConfetti(body, randomTop, randomRight, randomColor);
     }
-  }, 1000); // Ajusta el intervalo según la frecuencia de aparición deseada
+  }, 300); // Ajusta el intervalo según la frecuencia de aparición deseada
 });

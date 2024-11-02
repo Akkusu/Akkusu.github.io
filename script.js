@@ -17,8 +17,9 @@ function updatePage() {
     page.classList.toggle("active", index === currentPage);
   });
 
-  document.body.className = "";
-  document.body.classList.add(`bgpage-${currentPage + 1}`);
+  // Cambiar la clase del body para aplicar el fondo de la página actual
+  document.body.className = ""; // Elimina todas las clases previas
+  document.body.classList.add(`bgpage-${currentPage + 1}`); // Agrega la clase correspondiente a la página actual
 
   prevButton.disabled = currentPage === 0;
   nextButton.disabled = currentPage === pages.length - 1;
