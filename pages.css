@@ -121,12 +121,106 @@
   opacity: 0.8;
 }
 
-/* Estilo de texto en estilo lápiz/tiza para las páginas 2 a 6 */
-.page-2 h1, .page-3 h1, .page-4 h1, .page-5 h1, .page-6 h1 {
+/* Estilo de texto en estilo lápiz/tiza para la página 2 */
+.page-2 h1 {
   font-family: 'Leckerli One', cursive;
   font-size: 2.5em;
   font-weight: 400;
-  color: #ffffff; /* Color marrón para el texto */
+  color: #aea3f3; /* Color marrón para el texto */
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+.page-2 p {
+  font-family: 'Leckerli One', cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #aea3f3; /* Color marrón para el texto */
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+/* Estilo de texto en estilo lápiz/tiza para la página 3 */
+.page-3 h1 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #e9e1cd; /* Color marrón para el texto */
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+.page-3 p {
+  font-family: 'Leckerli One', cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #e9e1cd; /* Color marrón para el texto */
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+/* Estilo de texto en estilo lápiz/tiza para la página 4 */
+.page-4 h1 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #3e5035; /* Color marrón para el texto */
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+.page-4 p {
+  font-family: 'Leckerli One', cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #3e5035; /* Color marrón para el texto */
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+/* Estilo de texto en estilo lápiz/tiza para la página 5 */
+.page-5 h1 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #ffe5b0; /* Color marrón para el texto */
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+.page-5 p {
+  font-family: 'Leckerli One', cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #ffe5b0; /* Color marrón para el texto */
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+/* Estilo de texto en estilo lápiz/tiza para la página 6 */
+.page-6 h1 {
+  font-family: 'Leckerli One', cursive;
+  font-size: 2.5em;
+  font-weight: 400;
+  color: #433141; /* Color marrón para el texto */
+  text-align: center;
+  margin: 20px;
+  position: relative;
+}
+
+.page-6 p {
+  font-family: 'Leckerli One', cursive;
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #433141; /* Color marrón para el texto */
   text-align: center;
   margin: 20px;
   position: relative;
