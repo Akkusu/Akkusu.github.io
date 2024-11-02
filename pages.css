@@ -1,20 +1,15 @@
-/* Colores de fondo para cada página */
-.bgpage-1 { background-color: #453e30; } /* Color suave para la página 1 */
-.bgpage-2 { background-color: #2a2531; } /* Color suave para la página 2 L-E*/
-.bgpage-3 { background-color: #39332b; } /* Color suave para la página 3 R*/
-.bgpage-4 { background-color: #2a3124; } /* Color suave para la página 4 G*/
-.bgpage-5 { background-color: #342e27; } /* Color suave para la página 5 T-P*/
-.bgpage-6 { background-color: #302531; } /* Color suave para la página 6 P-C*/
-
 /* Colores de las páginas */
 .page-1 { background-color: #D1B99D; }
 
+/* Página 1 inicio */
+.bgpage-1 { background-color: #453e30; } /* Color suave para la página 1 */
+
 /* Página 2 */
-.page-2 { background-color: #68657a; position: relative; overflow: hidden;}
-.page-3 { background-color: #605e5b; }
+.page-2 { background-color: #393164; position: relative; overflow: hidden;}
+.page-3 { background-color: #bbbeba; }
 .page-4 { background-color: #B5D99C; }
 .page-5 { background-color: #908476; }
-.page-6 { background-color: #c29cd9; }
+.page-6 { background: #e8c8ef; }
 
 /* Bordes de las páginas */
 .page-1 { border-radius: 10px; }
@@ -31,8 +26,8 @@
 }
 
 .page-2 {
-  box-shadow: 0 10px 20px rgba(27, 97, 84, 0.5);
-  border: #141f1d 11px solid;
+  box-shadow: 0 10px 20px #20174f;
+  border: #20174f 11px solid;
 }
 
 .page-3 {
@@ -210,7 +205,8 @@
   font-family: 'Leckerli One', cursive;
   font-size: 2.5em;
   font-weight: 400;
-  color: #433141; /* Color marrón para el texto */
+  color: #c55db9; /* Color marrón para el texto */
+  text-shadow: #20174f;
   text-align: center;
   margin: 20px;
   position: relative;
@@ -220,7 +216,7 @@
   font-family: 'Leckerli One', cursive;
   font-size: 1.5em;
   font-weight: 400;
-  color: #433141; /* Color marrón para el texto */
+  color: #c55db9; /* Color marrón para el texto */
   text-align: center;
   margin: 20px;
   position: relative;
