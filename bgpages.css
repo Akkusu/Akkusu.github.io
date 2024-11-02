@@ -1,8 +1,13 @@
 /* Página 2: Estrella y la luna */
-.bgpage-2 {
-  background: radial-gradient(circle at top, #4e4675, #0c0b1c 90%);
+.bgpage-1 {
+  background: radial-gradient(circle at top, #756146, #1c140b 90%);
   position: relative;
-  transition: background-color 1s ease;
+}
+
+/* Página 2: Estrella y la luna */
+.bgpage-2 {
+  background: radial-gradient(circle at top, #645a94, #0c0b1c 90%);
+  position: relative;
 }
 
 /* Añadir más estrellas estáticas */
@@ -72,7 +77,7 @@
 /* Página 3: Las dos rocas */
 .bgpage-3 {
   position: relative;
-  background-color: #1b1818; /* Simulación de un prado oscuro */
+  background: radial-gradient(circle at top, #474747, #1b1818 90%); /* Simulación de un prado oscuro */
   height: 100vh; /* Asegúrate de que ocupe toda la altura */
 }
 
@@ -101,8 +106,7 @@
 
 /* Página 4: Los gatos negros */
 .bgpage-4 {
-  background: #1d1c20;
-  background: linear-gradient(to bottom, #252d47, #131313);
+  background: radial-gradient(circle at top, #495169, #090d12);
   position: relative;
 }
 
@@ -140,7 +144,7 @@
 
 /* Página 5: El pan y el café */
 .bgpage-5 {
-  background: linear-gradient(to bottom, #4b3931, #2b211e);
+  background: radial-gradient(circle at top, #795f53, #191210);
   position: relative;
 }
 
@@ -167,7 +171,7 @@
 /* Página 6: Pochacco y Cinnamoroll */
 .bgpage-6 {
   background: #f8e6fc;
-  background: linear-gradient(to top, #baa4d4, #cdbed1);
+  background: radial-gradient(circle at top, #e4cceb, #9880bb);
   position: relative;
 }
 
