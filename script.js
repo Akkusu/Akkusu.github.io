@@ -30,12 +30,10 @@ function updatePage() {
 // Función para avanzar de página
 function nextPage() {
 
-  /*
   if (!audioStarted) {
     pageSound.play();
     audioStarted = true;
   }
-    */
 
   if (currentPage < pages.length - 1) {
     currentPage++;
