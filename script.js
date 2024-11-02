@@ -7,7 +7,7 @@ const prevButton = document.getElementById("prev-page");
 const letterButton = document.getElementById("letter-button"); // Botón de carta
 const pageSound = document.getElementById("page-sound");
 
-let currentPage = 3;
+let currentPage = 0;
 let audioStarted = false;
 let cartaInstance = null; // Variable para la instancia de la carta
 

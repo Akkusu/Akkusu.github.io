@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       element.classList.add('fade-out'); // Aplica la clase de desvanecimiento
       setTimeout(() => {
         element.remove(); // Elimina el elemento después de que la animación termine
-      }, 1000); // Debe coincidir con la duración de la animación CSS (1s)
+      }, 5000); // Debe coincidir con la duración de la animación CSS (1s)
     });
   }
 
