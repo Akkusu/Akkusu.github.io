@@ -6,7 +6,6 @@ body {
   height: 100vh;
   margin: 0;
   background-color: #1e1e2e;
-  overflow: hidden;
   position: relative;
   transition: background-color 1s ease; /* Transición suave del color de fondo */
   }

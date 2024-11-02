@@ -1,5 +1,5 @@
 // script.js
-import Carta from './carta.js';
+import Carta from "./carta.js";
 
 const pages = document.querySelectorAll(".page");
 const nextButton = document.getElementById("next-page");
@@ -7,7 +7,7 @@ const prevButton = document.getElementById("prev-page");
 const letterButton = document.getElementById("letter-button"); // Botón de carta
 const pageSound = document.getElementById("page-sound");
 
-let currentPage = 0;
+let currentPage = 3;
 let audioStarted = false;
 let cartaInstance = null; // Variable para la instancia de la carta
 
@@ -23,13 +23,12 @@ function updatePage() {
   prevButton.disabled = currentPage === 0;
   nextButton.disabled = currentPage === pages.length - 1;
 
-  letterButton.style.display = currentPage === pages.length - 1 ? "inline-flex" : "none";
+  letterButton.style.display =
+    currentPage === pages.length - 1 ? "inline-flex" : "none";
 }
-
 
 // Función para avanzar de página
 function nextPage() {
-
   if (!audioStarted) {
     pageSound.play();
     audioStarted = true;
@@ -52,7 +51,9 @@ function prevPage() {
 // Función para abrir la carta usando la clase Carta
 function openLetter() {
   if (!cartaInstance) {
-    cartaInstance = new Carta("Mi amor, mi querida Danielita, feliz mes. Me has hecho feliz otro mes más y espero haber hecho lo mismo por ti, mi querida chiquitita. Decidí hacerte esta página simplemente porque soy medio ñoño, amor, y puedo combinar lo que me gusta con lo que me apasiona (claramente tú). Espero que algún día ambos podamos ver esta página y reírnos de cómo te hice una ñoñería. Por mientras, feliz mes, amor. Otro mes de felicidad, otro mes más sabiendo que elegí al amor de mi vida.");
+    cartaInstance = new Carta(
+      "Mi amor, mi querida Danielita, feliz mes. Me has hecho feliz otro mes más y espero haber hecho lo mismo por ti, mi querida chiquitita. Decidí hacerte esta página simplemente porque soy medio ñoño, amor, y puedo combinar lo que me gusta con lo que me apasiona (claramente tú). Espero que algún día ambos podamos ver esta página y reírnos de cómo te hice una ñoñería. Por mientras, feliz mes, amor. Otro mes de felicidad, otro mes más sabiendo que elegí al amor de mi vida."
+    );
   }
   cartaInstance.toggleCarta(); // Alterna entre mostrar y ocultar la carta
 }
