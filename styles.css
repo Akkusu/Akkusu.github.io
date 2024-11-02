@@ -1,0 +1,122 @@
+/* Estilos Generales */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #1e1e2e;
+  overflow: hidden;
+  position: relative;
+  transition: background-color 1s ease; /* Transición suave del color de fondo */
+  }
+  
+  .book {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    perspective: -1500px;
+    top: -3%;
+    left: -1%;
+  }
+  
+ /* Contenedor de los botones para darles espacio respecto a las páginas */
+.buttons {
+    display: flex;
+    gap: 40px; /* Espacio entre botones */
+    position: absolute;
+    bottom: 30px; /* Posicionar debajo de las páginas */
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Estilo general para los botones en forma de flecha */
+  .arrow-button {
+    padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Efecto de brillo */
+  .arrow-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: skewX(-45deg);
+    transition: left 0.4s ease;
+  }
+  
+  /* Brillo animado al pasar el cursor */
+  .arrow-button:hover::before {
+    left: 100%;
+  }
+  
+  /* Agrandar el botón cuando pasas el cursor */
+  .arrow-button:hover {
+    transform: scale(1.2);
+    border-color: #ffffff;
+  }
+  
+  /* Botón deshabilitado */
+  .arrow-button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  /* Botón de carta */
+.letter-button {
+  padding: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #db8be0;
+    background-color: transparent;
+    border: 2px solid #db8be0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.letter-button::before {
+  content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 200%;
+    height: 100%;
+    background: rgba(203, 111, 201, 0.3);
+    transform: skewX(-45deg);
+    transition: left 0.4s ease;
+}
+
+.letter-button:hover::before {
+  left: 100%;
+}
+
+.letter-button:hover {
+  transform: scale(1.2);
+  border-color: #db8be0;
+}

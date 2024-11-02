@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libro Pop-Up Animado</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="carta.css">
+  <link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="book">
+    <!-- Página 1 con decoraciones y estilo especial -->
+    <div class="page page-1 active">
+      <div class="content">
+        <div class="decorations">
+            <span class="star star-1">✧</span>
+            <span class="star star-2">✧</span>
+            <span class="star star-3">✧</span>
+            <span class="dot dot-1">•</span>
+            <span class="dot dot-2">•</span>
+            <span class="dot dot-3">•</span>
+          </div>
+        <h1 data-text="¿Crees que seamos almas gemelas en otros universos?">¿Crees que seamos almas gemelas en otros universos?</h1>
+        <div class="decorations">
+          <span class="star star-1">✧</span>
+          <span class="star star-2">✧</span>
+          <span class="star star-3">✧</span>
+          <span class="dot dot-1">•</span>
+          <span class="dot dot-2">•</span>
+          <span class="dot dot-3">•</span>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Otras páginas del libro -->
+    <div class="page page-2">
+      <div class="content">
+        <h1>espero que sí</h1>
+        <div class="popup-character">
+          <img src="img/i-1.png" alt="Imagen derecha" class="popup-image">
+          <img src="img/d-1.png" alt="Imagen izquierda" class="popup-image">
+        </div>
+      </div>
+    </div>
+    <div class="page page-3">
+      <div class="content">
+        <h1>espero que sí</h1>
+        <div class="popup-character">
+          <img src="img/i-2.png" alt="Imagen derecha" class="popup-image">
+          <img src="img/d-2.png" alt="Imagen izquierda" class="popup-image">
+        </div>
+      </div>
+    </div>
+    <div class="page page-4">
+      <div class="content">
+        <h1>espero que sí</h1>
+        <div class="popup-character">
+          <img src="img/i-3.png" alt="Imagen derecha" class="popup-image">
+          <img src="img/d-3.png" alt="Imagen izquierda" class="popup-image">
+        </div>
+      </div>
+    </div>
+    <div class="page page-5">
+      <div class="content">
+        <h1>espero que sí</h1>
+        <div class="popup-character">
+          <img src="img/i-4.png" alt="Imagen derecha" class="popup-image">
+          <img src="img/d-4.png" alt="Imagen izquierda" class="popup-image">
+        </div>
+      </div>
+    </div>
+    <div class="page page-6">
+      <div class="content">
+        <h1>realmente espero que sí</h1>
+        <div class="popup-character">
+          <img src="img/i-5.png" alt="Imagen derecha" class="popup-image">
+          <img src="img/d-5.png" alt="Imagen izquierda" class="popup-image">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="buttons">
+    <button id="prev-page" class="arrow-button"></button>
+    <button id="next-page" class="arrow-button"></button>
+    <button id="letter-button" class="letter-button" style="display: none;"></button> <!-- Botón de carta -->
+  </div>
+  <audio id="page-sound" src="sound/La-matriarca.mp3" preload="auto"></audio>
+  <script type="module" src="script.js"></script>
+  <script src="pages.js"></script>
+</body>
+</html>
