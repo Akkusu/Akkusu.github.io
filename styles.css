@@ -14,7 +14,7 @@ body {
     position: relative;
     width: 600px;
     height: 400px;
-    perspective: -1500px;
+    perspective: 1500px;
     top: -3%;
     left: -1%;
   }

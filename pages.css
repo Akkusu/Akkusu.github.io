@@ -35,9 +35,9 @@
 
 /* Página 5 */
 .page-5 {
-  background-color: #908476;
+  background-color: #967c5f;
   border-radius: 10px;
-  box-shadow: 0 10px 20px rgba(56, 0, 0, 0.5);
+  box-shadow: 0 10px 20px #382804;
   border: #382804 11px solid;
 }
 
@@ -60,17 +60,18 @@
   color: #fff;
   backface-visibility: hidden;
   transform-origin: bottom center;
-  transform: rotateX(-90deg); /* Páginas cerradas hacia atrás */
-  transition: transform 1s ease, opacity 1s ease;
+  transform: rotateX(-90deg) scale(0.9); /* Páginas cerradas, con ligera reducción de escala */
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s ease; /* Transición con curva de bezier para un efecto más natural */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  z-index: 2
+  z-index: 2;
 }
 
+/* Página activa con apertura */
 .page.active {
-  transform: rotateX(0deg); /* Página activa abierta */
+  transform: rotateX(0deg) scale(1); /* Página abierta completamente con escala normal */
   opacity: 1;
 }
 
@@ -273,22 +274,30 @@
   align-items: flex-end;
   position: relative;
   bottom: 0;
-  transform: scaleY(0);
+  transform: perspective(800px) rotateX(-50deg) scaleY(0.9) translateY(-80px); /* Simula un desdoblado en 3D */
   transform-origin: bottom;
-  transition: transform 0.6s ease-out;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s ease;
+  opacity: 0; /* Empieza invisible */
 }
 
+/* Ajustes para las imágenes */
 .popup-character img {
   width: 45%; /* Ajusta el tamaño según sea necesario */
-  transition: transform 0.6s ease-out;
+  transform-origin: bottom center;
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s ease; /* Animación en sincronización */
+  opacity: 0; /* Empieza invisible */
 }
 
+/* Animación en la página activa */
 .page.active .popup-character {
-  transform: scaleY(1);
+  transform: perspective(800px) rotateX(0deg) scaleY(1) translateY(0); /* Se desdobla desde abajo */
+  opacity: 1; /* Se hace visible */
 }
 
 .page.active .popup-image {
-  transform: scale(1);
+  transform: scale(1.05); /* Ligero aumento de escala para dar efecto de entrada */
+  opacity: 1; /* Se hace visible */
+  transition: transform 1s cubic-bezier(0.25, 0.1, 0.25, 1), opacity 1s ease; /* Animación sincronizada */
 }
 
 /* Contenedor de los botones */
