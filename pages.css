@@ -1,9 +1,9 @@
 /* Página 1 */
 .page-1 {
-  background-color: #d1b99d;
+  background-color: #b29a80;
   border-radius: 10px;
   box-shadow: 0 10px 20px #382804;
-  border: #382804 11px solid;
+  border: #382804 11px solid
 }
 
 /* Página 2 */
@@ -30,7 +30,6 @@
   border-radius: 10px;
   box-shadow: 0 10px 20px #1a2136;
   border: #1a2136 11px solid;
-  overflow: hidden;
 }
 
 /* Página 5 */
@@ -43,10 +42,9 @@
 
 /* Página 6 */
 .page-6 {
-  background-color: #e8c8ef;
+  background-color: #e2baeb;
   width: 100%; /* Asegura que ocupe todo el ancho del body */
   position: relative; /* Posiciona el contenido de manera relativa */
-  overflow: hidden; /* Evita scroll si hay contenido adicional */
   border-radius: 10px;
   box-shadow: 0 10px 20px #cd95da;
   border: #cd95da 11px solid;
@@ -54,7 +52,7 @@
 
 /* Estilos para las Páginas */
 .page {
-  position: absolute;
+  position: absolute; /* Para que los pseudo-elementos se posicionen en relación a la página */
   width: 100%;
   height: 100%;
   color: #fff;
@@ -68,6 +66,24 @@
   overflow: hidden;
   z-index: 2;
 }
+
+/* Pseudo-elemento para crear un marco exterior 
+.page::before {
+  content: '';
+  position: absolute;
+  top: -25px; /* Ajusta el valor para controlar cuánto sobresale el marco 
+  left: -25px;
+  right: -25px;
+  bottom: -25px;
+  border-width: 40px; /* Ajusta el ancho del borde 
+  border-style: solid;
+  border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-6.svg");
+  border-image-slice: 60 fill; /* Ajusta según el diseño de tu imagen de borde 
+  border-image-repeat: round;
+  pointer-events: none; /* Evita que el marco interfiera con la interacción 
+  z-index: 2; /* Mantiene el marco por detrás del contenido de la página 
+}
+*/
 
 /* Página activa con apertura */
 .page.active {
